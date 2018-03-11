@@ -1,0 +1,30 @@
+[
+    {
+        "marka":"BMW",
+        "model":"320d",
+        "cena":8900,
+        "putanja":"images/bmwe90.jpg",
+        "alt":"bmw e90 320d"
+    },
+    {
+        "marka":"BMW",
+        "model":"520d",
+        "cena":6999,
+        "putanja":"images/bmwe60.jpg",
+        "alt":"bmw e60 520d"
+    },
+    {
+        "marka":"AUDI",
+        "model":"A6 2.0 TDI",
+        "cena":15900,
+        "putanja":"images/audic7.jpg",
+        "alt":"audi a6 c7"
+    },
+    {
+        "marka":"AUDI",
+        "model":"A8 3.0 TDI",
+        "cena":14500,
+        "putanja":"images/audia8.jpg",
+        "alt":"audi a8"
+    }
+]

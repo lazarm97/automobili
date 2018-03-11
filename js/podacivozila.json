@@ -1,0 +1,82 @@
+[
+    {
+        "id":1,
+        "marka":"BMW",
+        "model":"320d",
+        "godinaProizvodnje":2008,
+        "kilometraza":200000,
+        "cena":8900,
+        "putanja":"images/bmwe90.jpg",
+        "alt":"bmw e90 320d"
+    },
+    {
+        "id":2,
+        "marka":"BMW",
+        "model":"520d",
+        "godinaProizvodnje":2005,
+        "kilometraza":220000,
+        "cena":6999,
+        "putanja":"images/bmwe60.jpg",
+        "alt":"bmw e60 520d"
+    },
+    {
+        "id":3,
+        "marka":"AUDI",
+        "model":"A6 2.0 TDI",
+        "godinaProizvodnje":2013,
+        "kilometraza":135000,
+        "cena":15900,
+        "putanja":"images/audic7.jpg",
+        "alt":"audi a6 c7"
+    },
+    {
+        "id":4,
+        "marka":"AUDI",
+        "model":"A8 3.0 TDI",
+        "godinaProizvodnje":2011,
+        "kilometraza":173000,
+        "cena":14500,
+        "putanja":"images/audia8.jpg",
+        "alt":"audi a8"
+    },
+    {
+        "id":5,
+        "marka":"MERCEDES",
+        "model":"E220 CDI",
+        "godinaProizvodnje":2015,
+        "kilometraza":70000,
+        "cena":23900,
+        "putanja":"images/merce.jpg",
+        "alt":"mercedes e220cdi"
+    },
+    {
+        "id":6,
+        "marka":"MERCEDES",
+        "model":"G500 CDI",
+        "godinaProizvodnje":2009,
+        "kilometraza":164000,
+        "cena":27000,
+        "putanja":"images/mercg.jpg",
+        "alt":"mercedes g500cdi"
+    },
+    {
+        "id":7,
+        "marka":"LAND ROVER",
+        "model":"RANGE ROVER SPORT 3.0",
+        "godinaProizvodnje":2010,
+        "kilometraza":180000,
+        "cena":15400,
+        "putanja":"images/lands.jpg",
+        "alt":"land rover range rover sport"
+    },
+    {
+        "id":8,
+        "marka":"PORSHE",
+        "model":"PANAMERA 3.0D",
+        "godinaProizvodnje":2013,
+        "kilometraza":130000,
+        "cena":27999,
+        "putanja":"images/pors.jpg",
+        "alt":"porsche panamera"
+    }
+]

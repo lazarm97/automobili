@@ -1,0 +1,26 @@
+[
+    {
+        "drzava":"Nemačka",
+        "link":"https://suchen.mobile.de/fahrzeuge/search.html?cn=DE&dam=0&isSearchRequest=true&vc=Car",
+        "putanja":"images/nem1.png",
+        "alt":"Zastava Nemačke"
+    },
+    {
+        "drzava":"Austrija",
+        "link":"https://suchen.mobile.de/fahrzeuge/search.html?cn=AT&dam=0&isSearchRequest=true&vc=Car",
+        "putanja":"images/aus1.jpg",
+        "alt":"Zastava Austrije"
+    },
+    {
+        "drzava":"Švajćarska",
+        "link":"https://suchen.mobile.de/fahrzeuge/search.html?cn=CH&dam=0&isSearchRequest=true&vc=Car",
+        "putanja":"images/sva1.png",
+        "alt":"Zastava Švajćarske"
+    },
+    {
+        "drzava":"Holandija",
+        "link":"https://suchen.mobile.de/fahrzeuge/search.html?cn=NL&dam=0&isSearchRequest=true&vc=Car",
+        "putanja":"images/hol1.png",
+        "alt":"Zastava Holandije"
+    }
+]

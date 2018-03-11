@@ -1,0 +1,32 @@
+[
+    {
+        "id":1,
+        "marka":"BMW",
+        "model":"320d",
+        "godinaProizvodnje":2008,
+        "kilometraza":200000,
+        "cena":8900,
+        "putanja":"images/bmwe90.jpg",
+        "alt":"bmw e90 320d"
+    },
+    {
+        "id":2,
+        "marka":"BMW",
+        "model":"520d",
+        "godinaProizvodnje":2005,
+        "kilometraza":220000,
+        "cena":6999,
+        "putanja":"images/bmwe60.jpg",
+        "alt":"bmw e60 520d"
+    },
+    {
+        "id":3,
+        "marka":"AUDI",
+        "model":"A6 2.0 TDI",
+        "godinaProizvodnje":2013,
+        "kilometraza":135000,
+        "cena":15900,
+        "putanja":"images/audic7.jpg",
+        "alt":"audi a6 c7"
+    }
+]

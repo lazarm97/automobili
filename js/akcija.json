@@ -1,0 +1,32 @@
+[
+    {
+        "id":4,
+        "marka":"AUDI",
+        "model":"A8 3.0 TDI",
+        "godinaProizvodnje":2011,
+        "kilometraza":173000,
+        "cena":14500,
+        "putanja":"images/audia8.jpg",
+        "alt":"audi a8"
+    },
+    {
+        "id":5,
+        "marka":"MERCEDES",
+        "model":"E220 CDI",
+        "godinaProizvodnje":2015,
+        "kilometraza":70000,
+        "cena":23900,
+        "putanja":"images/merce.jpg",
+        "alt":"mercedes e220cdi"
+    },
+    {
+        "id":6,
+        "marka":"MERCEDES",
+        "model":"G500 CDI",
+        "godinaProizvodnje":2009,
+        "kilometraza":164000,
+        "cena":27000,
+        "putanja":"images/mercg.jpg",
+        "alt":"mercedes g500cdi"
+    }
+]
