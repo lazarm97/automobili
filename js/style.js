@@ -99,4 +99,5 @@ $(document).ready(function(){
     rezultat += "</ul>";
     
     document.getElementById("ispisGresaka").innerHTML = rezultat;
+
 }
