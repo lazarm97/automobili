@@ -199,3 +199,153 @@ $(document).ready(function(){
     document.getElementById("sortirajddl").innerHTML += ispis;
 
 });
+
+
+    $('#sortirajddl').change(function(e){
+        e.preventDefault();
+        
+        var vozilaId = $('#sortirajddl').val();
+
+        if(vozilaId == 'nazivR'){
+            $.ajax({
+                type: 'GET',
+                url: 'js/podacivozila.json',
+                success: sortirajProizvodeImeGore
+            });
+        }
+        if(vozilaId == 'nazivO'){
+            $.ajax({
+                type: 'GET',
+                url: 'js/podacivozila.json',
+                success: sortirajProizvodeImeDole
+            });
+        }
+        if(vozilaId == 'cenaRa'){
+            $.ajax({
+                type: 'GET',
+                url: 'js/podacivozila.json',
+                success: sortirajProizvodeCenaRa
+            });
+        }
+        if(vozilaId == 'cenaOp'){
+            $.ajax({
+                type: 'GET',
+                url: 'js/podacivozila.json',
+                success: sortirajProizvodeCenaOp
+            });
+        }
+        if(vozilaId == 'kilRa'){
+            $.ajax({
+                type: 'GET',
+                url: 'js/podacivozila.json',
+                success: sortirajProizvodeKilRa
+            });
+        }
+        if(vozilaId == 'kilOp'){
+            $.ajax({
+                type: 'GET',
+                url: 'js/podacivozila.json',
+                success: sortirajProizvodeKilOp
+            });
+        }
+
+    });
+
+    function sortirajProizvodeKilRa(podaci) {
+		
+		podaci.sort(function(proizvodA, proizvodB){
+			if(proizvodA.kilometraza > proizvodB.kilometraza) return 1;
+			else if(proizvodA.kilometraza < proizvodB.kilometraza) return -1;
+			else return 0;
+		});
+
+		var ispis = prikazProizvoda(podaci);
+
+		$('#sve').html(ispis);
+    }
+
+    function sortirajProizvodeKilOp(podaci) {
+		
+		podaci.sort(function(proizvodA, proizvodB){
+			if(proizvodA.kilometraza < proizvodB.kilometraza) return 1;
+			else if(proizvodA.kilometraza > proizvodB.kilometraza) return -1;
+			else return 0;
+		});
+
+		var ispis = prikazProizvoda(podaci);
+
+		$('#sve').html(ispis);
+    }
+
+    function sortirajProizvodeCenaOp(podaci) {
+		
+		podaci.sort(function(proizvodA, proizvodB){
+			if(proizvodA.cena < proizvodB.cena) return 1;
+			else if(proizvodA.cena > proizvodB.cena) return -1;
+			else return 0;
+		});
+
+		var ispis = prikazProizvoda(podaci);
+
+		$('#sve').html(ispis);
+    }
+
+    function sortirajProizvodeCenaRa(podaci) {
+		
+		podaci.sort(function(proizvodA, proizvodB){
+			if(proizvodA.cena > proizvodB.cena) return 1;
+			else if(proizvodA.cena < proizvodB.cena) return -1;
+			else return 0;
+		});
+
+		var ispis = prikazProizvoda(podaci);
+
+		$('#sve').html(ispis);
+    }
+
+    function sortirajProizvodeImeGore(podaci) {
+		
+		podaci.sort(function(proizvodA, proizvodB){
+			if(proizvodA.marka > proizvodB.marka) return 1;
+			else if(proizvodA.marka < proizvodB.marka) return -1;
+			else return 0;
+		});
+
+		var ispis = prikazProizvoda(podaci);
+
+		$('#sve').html(ispis);
+    }
+    
+    function sortirajProizvodeImeDole(podaci) {
+		
+		podaci.sort(function(proizvodA, proizvodB){
+			if(proizvodA.marka < proizvodB.marka) return 1;
+			else if(proizvodA.marka > proizvodB.marka) return -1;
+			else return 0;
+		});
+
+		var ispis = prikazProizvoda(podaci);
+
+		$('#sve').html(ispis);
+	}
+
+	function prikazProizvoda(podaci){
+		var ispis = "";
+		$.each(podaci, function(index, podatak){
+            ispis += 
+                '<div class="row">'+
+                    '<div class="col-lg-4">'+
+                        '<img src="'+ podatak.putanja +'" class="img-responsive img-thumbnail" alt="'+ podatak.alt +'">'+
+                    '</div>'+
+                    '<div class="col-lg-8">'+
+                        '<h4>Marka:'+ podatak.marka +'</h4>'+
+                        '<h4>Model:'+podatak.model+'</h4>'+
+                        '<h4>Godina proizvodnje:'+podatak.godinaProizvodnje+'</h4>'+
+                        '<h4>Kilometraža:'+podatak.kilometraza+' km</h4>'+
+                        '<h4>Cena:'+podatak.cena+' &euro;</h4>'+
+                    '</div>'+
+                '</div>'+
+                '<hr>';
+        });
+		return ispis;
+	}

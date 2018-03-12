@@ -153,6 +153,16 @@ h1{
     border-radius: 5px;
 }
 
+#autorNav{
+    float: none;
+    vertical-align: top;
+}
+
+#autorNav li{
+    display: inline-block;
+    float:none;
+}
+
 #hederMojStil h1{
     color: #fff;
 }
