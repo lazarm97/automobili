@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset>
 <url>
-  <loc>https://lazarm97.github.io/uvoz-automobila/index.html</loc>
+  <loc>https://lazarm97.github.io/automobili/index.html</loc>
   <lastmod>2018-03-08T11:35:44+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://lazarm97.github.io/uvoz-automobila/oautoru.html</loc>
+  <loc>https://lazarm97.github.io/automobili/kompletna%20ponuda.html</loc>
+  <lastmod>2018-03-08T11:35:44+00:00</lastmod>
+  <priority>0.90</priority>
+</url>
+<url>
+  <loc>https://lazarm97.github.io/automobili/oautoru.html</loc>
   <lastmod>2018-03-08T11:35:44+00:00</lastmod>
   <priority>0.80</priority>
 </url>
